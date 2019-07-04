@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.danfs82.workshopmongo.config.dto.UserDTO;
 import com.danfs82.workshopmongo.domain.User;
+import com.danfs82.workshopmongo.dto.UserDTO;
 import com.danfs82.workshopmongo.repository.UserRepository;
 import com.danfs82.workshopmongo.services.exception.ObjectNotFoundException;
 

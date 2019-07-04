@@ -1,28 +1,23 @@
-package com.danfs82.workshopmongo.config.dto;
+package com.danfs82.workshopmongo.dto;
 
 import java.io.Serializable;
 
 import com.danfs82.workshopmongo.domain.User;
 
-public class UserDTO implements Serializable{
+public class AuthorDTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-
-	private String id;
-
-	private String name;
-
-	private String email;
 	
-	public UserDTO() {
+	private String id;
+	private String name;
+	
+	public AuthorDTO() {
 		
 	}
 	
-	public UserDTO(User obj) {
-		
-		this.id = obj.getId();
-		this.name = obj.getName();
-		this.email = obj.getEmail();
+	public AuthorDTO(User obj) {
+		id = obj.getId();
+		name = obj.getName();
 	}
 
 	public String getId() {
@@ -40,15 +35,6 @@ public class UserDTO implements Serializable{
 	public void setName(String name) {
 		this.name = name;
 	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	
 	
 	
 }

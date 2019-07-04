@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.danfs82.workshopmongo.config.dto.UserDTO;
 import com.danfs82.workshopmongo.domain.User;
+import com.danfs82.workshopmongo.dto.UserDTO;
 import com.danfs82.workshopmongo.services.UserService;
 
 @RestController
